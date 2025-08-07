@@ -1,6 +1,6 @@
 ## PCB板绘制流程  
 
-![PCB板绘制流程](img\2.png)
+![PCB板绘制流程](img/2.png)
 
 
 
@@ -38,7 +38,7 @@ Y：使元器件竖直翻转180°
 
 右键要批量选择的元器件，点击Find similar objects，将需要类型的器件处点击为same，点击ok即可选中所有所需的器件。  (cap是电容的意思,当时是选中电容作为演示器件),然后就与上面的封装内容相同.
 
-![select_test](img\1.png)
+![select_test](img/1.png)
 
 点击编译,运行成功没有报错,那么就可以开始绘制PCB板了.
 
@@ -91,3 +91,4 @@ Y：使元器件竖直翻转180°
 点击Tool 菜单栏,点击Design rule check,点击Run Design rule check 检查规则.  
 
 有则改之,无则加勉.
+
