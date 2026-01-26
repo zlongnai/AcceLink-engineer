@@ -1,0 +1,8 @@
+ACO：相干光模块    
+DCO：直调光模块  
+DCI：datacenter interconnect 数据互联中心        
+DWDM：Dense Wavelength Division Multiplexing密集波分复用    
+muxing：多路复用技术
+SNR：信噪比   
+OSNR：光信噪比    
+

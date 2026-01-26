@@ -1,0 +1,63 @@
+﻿## 光模块封装介绍  
+SFP  
+SFP是SMALL FORM PLUGGABLE（小型可插拔）的缩写，可以简单的理解为GBIC的升级版本，它的体积只有GBIC模块的1/2。SFP封装光模块的传输速率有155M、1.25G、2.5G等，接口类型主要以LC接口为主，一般用在SONET/SDH网络、百兆/千兆以太网以及其他低速传输应用。有些交换机厂商称SFP模块为小型化GBIC（MINI-GBIC）
+
+eSFP  
+eSFP（Enhanced Small Form-factor Pluggable）增强型SFP光模块，指的是带电压、温度、偏置电流、发送光功率、接收光功率监控功能的SFP，当前所有的SFP有，所以也就把eSFP都统一叫SFP了。
+
+SFP+  
+SFP+（Small Form-factor Pluggable Plus）指速率提升的SFP模块，SFP+与SFP外观尺寸相同，SFP+封装光模块的传输速率有6G、8G、10G等,采用该封装类型的有6G/8GFC光模块、10G光模块、10G电口模块、10GDAC高速线缆以及10GAOC有源光缆。
+
+SFP28  
+SFP28（Small Form-factor Pluggable 28）是SFP+的加强版，和SFP+具有相同的尺寸，但其能支持单通道25Gb/s的速率。
+
+SFP56  
+SFP56采用PAM4调制，以实现单通道56Gb/s的速率。
+
+QSFP+  
+QSFP+（Quad Small Form-factor Pluggable）四通道小型可热插拔，它支持4×10Gbit/s通道传输，可通过4个通道实现40Gbps传输速率，传输速率可达SFP+光模块的四倍。QSFP+光模块支持MPO光纤连接器，相比SFP+光模块尺寸更大。
+
+QSFP28  
+QSFP28（Quad Small Form-factor Pluggable 28）四通道小型可插拔28光模块，每个模块包含四个独立通道，每个通道的传输速率均为25Gbps，接口封装大小与QSFP+相同，支持速率为100G的QSFP28光模块和40G的QSFP+光模块。
+
+QSFP56  
+QSFP56（Quad Small Form-Factor Pluggable）四通道小型可热插拔。QSFP56、OSFP28和OSFP+封装类型相同，QSFP56封装与QSFP28、QSFP+封装的最大不同之处在于QSFP56不再采取之前的NRZ调制技术而是采用PAM4技术(4 Pulse Amplitude Modulation)，每个通道的传输速率可以达到50G至56G。QSFP56光模块也被称为200GQSFP光模块。
+
+QSFP-DD  
+QSFP-DD（Quad Small Form Factor Pluggable Double Density）双密度四通道小型可插拔封装。是一种新型模块和笼式/连接器系统，类似于当前的QSFP, 但有一排额外的触点，提供八通道电气接口，每通道速率高达25Gb/s（NRZ调制）或50Gb/s（PAM4调制），提供高达200Gb/s或400Gb/s的解决方案。QSFP-DD都能够兼容QSFP+/QSFP28。QSFP-DD的宽度、长度和厚度为18.35mm*89.4mm*8.5mm。
+
+QSFP112  
+QSFP112是一种光纤通道模块，支持4个112Gbps的通道，总传输速率为448Gbps，支400G和800G速率。QSFP112能够兼容QSFP+/QSFP28。
+
+OSFP  
+OSFP（Octal Small Form Factor Pluggable）是一种新的可插拔封装，模块相较于QSFP-DD尺寸要更大一些，OSFP具有8个高速电气通道，支持200G、400G和800G速率，其常见接口为LC和MPO，相比QSFP-DD，OSFP在散热和电气性能上有更优秀的表现。OSFP不能向下兼容QSFP+/QSFP28。OSFP的宽度、长度和厚度为22.58mm*107.8mm*13.0mm。
+
+CFP8  
+CFP8最大的带宽是400Gb/s，CFP8支持400Gb/s(16x25G或8x50G)。CFP8的尺寸(41.5mm*107.5mm*9.5mm)比QSFP-DD明显大的多，体积是QSFP-DD的3倍多，甚至比OSFP还要大30%以上。
+
+LPO  
+英文全称为Linear-drive Pluggable Optics，线性驱动可插拨光模块，通常支持400G、800G速率。LPO通过消除DSP（数字信号处理）电路，功耗比常规模块要低。缺点是目前标准尚未统一，跨厂商设备间有互通风险（甚至不能互通）。    
+
+
+
+## 光模块参数介绍    
+比如：      
+速率：100G，表示100Gbps    
+封装：如上光模块封装介绍    
+协议：包含硬件协议和软件协议，其中硬件协议是定义封装的接口    
+传输距离： LR4——10KM， SR——100m， DR——500m， FR——2KM， LR——10KM， ER——40KM， ZR——80KM    
+
+
+## 模块   
+直调光模块DCO：直接控制光模块的输出功率大小（或者叫波形大小）来输出01信号      
+相干光模块ACO：通过调制器通过改变光的相位和振幅来实现信号的调制，降01信号附加在相位上       
+
+
+## 光模块组件介绍    
+cosa：coherent optical sub assembly 相干光组件，   
+Tosa：transmit optical sub assembly 光发射组件，是用来将电信号转化为光信号的 
+Rosa：Receive optical sub assembly  光接收组件，是用来将光信号转化为电信号的     
+Bosa：bi-directional optical sub assembly 光发射接收组件     
+
+ITLA：integratable tunable laser assembly 集成可调谐激光器   
+TIA：transimpedance amplifier 跨阻放大器，可以将电流信号转化为电压信号

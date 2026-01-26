@@ -1,0 +1,8 @@
+Ain：模拟信号输入口，一般是ADC的输入口     
+ADG：模拟开关        
+PGA：可编程增益放大器   
+TIA：跨阻放大器   
+PLA：可编程逻辑阵列   
+FPU：浮点计算单元   
+LDO：低压差稳压器, low dropout regulator   
+msps:million sample per second,百万次采样每秒
